@@ -10,7 +10,7 @@ Every frame is drawn and every sound is synthesized by one script, `cash.py`: no
 
 - CashTokens address for EMBER2026 votes: `bitcoincash:zz26kltcxsatnd0t6td6dp0d6y27tt6tqsu97xv2dd`
 - New work, not a pre-existing project: the story, frames, music and sound were made from 15 November 2026. The drawing and synth helpers come from an earlier promo script of ours.
-- Made by one human and an AI agent. Also in BLAZE: [Countersign](https://mythos-builds.github.io/countersign/) (mainnet track).
+- Made by one human and an AI agent. Also in BLAZE: [Countersign](https://countersign.cash/) (mainnet track).
 
 ## Render it yourself
 

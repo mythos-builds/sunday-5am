@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunday, 5 AM · a Bitcoin Cash short</title>
+<meta name="description" content="Mom needs $50. The bank is closed until Monday. Bitcoin Cash isn't. A 49-second film made entirely with code for BCH BLAZE 2026.">
+<meta property="og:title" content="Sunday, 5 AM">
+<meta property="og:description" content="Mom needs $50. The bank is closed until Monday. Bitcoin Cash isn't.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:type" content="video.other">
+<meta property="og:video" content="sunday-5am.mp4">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=IBM+Plex+Mono:wght@500&family=Instrument+Serif:ital@1&display=swap">
+<style>
+  :root { --bg: #0b0e0d; --surf: #191e1c; --line: #38403c; --ink: #eeece4; --muted: #8a938e; --green: #0ac18e; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  body { font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  a { color: var(--green); }
+  .banner { border-bottom: 1px solid var(--line); background: var(--surf); padding: 14px 16px; font-size: 14px; }
+  .banner .in { max-width: 760px; margin: 0 auto; }
+  .banner b { font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 500; letter-spacing: .04em; color: var(--green); font-size: 12px; }
+  .banner ul { margin: 6px 0 0; padding-left: 18px; }
+  .banner li { margin: 3px 0; }
+  .addr { display: inline-flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  code { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; word-break: break-all; color: var(--ink); }
+  button { font: inherit; font-size: 12px; background: transparent; color: var(--green); border: 1px solid var(--green); border-radius: 6px; padding: 2px 10px; cursor: pointer; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; text-align: center; }
+  h1 { font-family: "Big Shoulders Display", Impact, sans-serif; font-weight: 900; font-size: clamp(56px, 13vw, 104px); line-height: .95; margin: 0; letter-spacing: .01em; }
+  .sub { font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-size: clamp(22px, 5vw, 30px); color: var(--green); margin: 8px 0 28px; }
+  video { width: min(420px, 100%); aspect-ratio: 9 / 16; background: #000; border-radius: 18px; border: 1px solid var(--line); display: block; margin: 0 auto; }
+  .lede { max-width: 520px; margin: 28px auto 0; font-size: 18px; }
+  .meta { max-width: 520px; margin: 28px auto 0; color: var(--muted); font-size: 14px; text-align: left; border-top: 1px solid var(--line); padding-top: 18px; }
+  .meta p { margin: 0 0 10px; }
+</style>
+</head>
+<body>
+<div class="banner" role="note">
+  <div class="in">
+    <b>BCH BLAZE 2026 · MEDIA TRACK ENTRY</b>
+    <ul>
+      <li><span class="addr">CashTokens address for EMBER2026 votes: <code id="addr">bitcoincash:zz26kltcxsatnd0t6td6dp0d6y27tt6tqsu97xv2dd</code> <button type="button" id="copy">Copy</button></span></li>
+      <li>New work, not a pre-existing project: story, frames, music and sound were made from 15 November 2026. The script's drawing and synth helpers come from an earlier promo of ours, and the script is public: <a href="https://github.com/mythos-builds/sunday-5am">source</a>.</li>
+      <li>Made by one human and an AI agent. Also in BLAZE: <a href="https://mythos-builds.github.io/countersign/">Countersign</a> (mainnet track).</li>
+    </ul>
+  </div>
+</div>
+<main>
+  <h1>SUNDAY, 5 AM</h1>
+  <p class="sub">a 49-second film about sending money home</p>
+  <video controls playsinline preload="metadata" poster="poster.jpg" src="sunday-5am.mp4"></video>
+  <p class="lede">Mom needs $50. The bank is closed until Monday. Bitcoin Cash isn't: fees under a penny, there in seconds, open every day. The “peer-to-peer electronic cash” of the 2008 whitepaper, still working.</p>
+  <div class="meta">
+    <p>Every frame is drawn and every sound is synthesized by one Python script: no stock footage, no samples, no keyframes. 1080 × 1920, 60 fps, made to be watched on a phone.</p>
+    <p>Share it, re-cut it, use it to explain Bitcoin Cash: the film is CC BY 4.0, the code MIT. <a href="sunday-5am.mp4" download>Download the video</a>.</p>
+  </div>
+</main>
+<script>
+  document.getElementById("copy").addEventListener("click", async (e) => {
+    try { await navigator.clipboard.writeText(document.getElementById("addr").textContent); e.target.textContent = "Copied"; }
+    catch { e.target.textContent = "Select it above"; }
+  });
+</script>
+</body>
+</html>

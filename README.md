@@ -27,7 +27,7 @@ python3 cash.py --stills 1,3,5.2  # → out/stills.png, frames at those seconds
 
 ## What the film claims, and where it comes from
 
-- « Fees under a penny » and « in seconds »: bitcoincash.org's own words (« fees under a penny and confirmations in seconds »). A typical payment is about 220 bytes at 1 satoshi per byte.
+- « Fees under a penny » and « in seconds »: bitcoincash.org's own words (« fees under a penny and confirmations in seconds »). A typical payment is about 220 bytes at 1 sat per byte.
 - « every day, all day »: the network has no business hours.
 - The quote is the opening of the abstract of *Bitcoin: A Peer-to-Peer Electronic Cash System* (2008).
 
